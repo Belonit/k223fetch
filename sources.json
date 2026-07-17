@@ -1,0 +1,94 @@
+[
+  {
+    "id": "fl-esports-installed-k223-updater",
+    "name": "Installed FL Esports K223 firmware updater",
+    "extraction": ["pe", "raw"],
+    "local_path": "%ProgramFiles(x86)%\\FL Esports\\UpdateFirmware\\K223RGB_V10003.exe"
+  },
+  {
+    "id": "fl-esports-installed-application",
+    "name": "Installed FL Esports application",
+    "extraction": ["pe", "intel-hex"],
+    "local_path": "%ProgramFiles(x86)%\\FL Esports\\FL Esports.exe"
+  },
+  {
+    "id": "fl-esports-cos-macos-1.06.02",
+    "name": "FL Esports Tencent COS",
+    "size": 44552730,
+    "sha256": "198588343896c24be75d743fb0e05fdd910f35a235e66c52f9452378a99686b8",
+    "extraction": ["zip", "dmg", "intel-hex"],
+    "url": "https://flesports-1343263359.cos.ap-guangzhou.myqcloud.com/FL-Esports-V1.06.02.zip"
+  },
+  {
+    "id": "deepcool-kg722-windows-1.04.11",
+    "name": "DeepCool KG722 V1.04.11",
+    "size": 27906336,
+    "sha256": "4f16300a52b5eeb58eb088fbc28fb619692189443dbcbf528f2854d4bc0180cf",
+    "extraction": ["zip", "inno-lzma1", "pe", "intel-hex"],
+    "url": "https://www.deepcool.com/download/firmware/KG722_Setup.zip"
+  },
+  {
+    "id": "hator-skyfall-tkl-pro-windows-1.04.03",
+    "name": "HATOR Skyfall TKL PRO V1.04.03",
+    "size": 27034624,
+    "sha256": "c4c3d89e9aedbe72cc95020c846452a784a1cfce480840949e37df145f4501b4",
+    "extraction": ["zip", "inno-lzma1", "pe", "intel-hex"],
+    "url": "https://hator.gg/wp-content/uploads/driver/keyboards/HATOR_Skyfall_TKL_PRO_Software_Installer_V1.04.03.zip"
+  },
+  {
+    "id": "fl-esports-wayback-macos-1.06.02",
+    "name": "Internet Archive mirror",
+    "size": 44552730,
+    "sha256": "198588343896c24be75d743fb0e05fdd910f35a235e66c52f9452378a99686b8",
+    "extraction": ["zip", "dmg", "intel-hex"],
+    "url": "https://web.archive.org/web/20260716223524id_/https://flesports-1343263359.cos.ap-guangzhou.myqcloud.com/FL-Esports-V1.06.02.zip"
+  },
+  {
+    "id": "fl-esports-vietnam-macos-1.06.02",
+    "name": "FL Esports Vietnam V1.06.02",
+    "size": 44552730,
+    "sha256": "198588343896c24be75d743fb0e05fdd910f35a235e66c52f9452378a99686b8",
+    "extraction": ["zip", "dmg", "intel-hex"],
+    "url": "https://fl-esports.com/?wpdmdl=2175"
+  },
+  {
+    "id": "fl-esports-vietnam-windows-1.06.17",
+    "name": "FL Esports Vietnam V1.06.17",
+    "size": 49140186,
+    "sha256": "93fbb49138d82bbf6dae77ef7a19c6f7a474477cc9dfab6041b29fb2834f1d67",
+    "extraction": ["zip", "inno-lzma1", "pe", "intel-hex"],
+    "url": "https://fl-esports.com/?wpdmdl=2504"
+  },
+  {
+    "id": "vortexseries-vx8-windows",
+    "name": "VortexSeries VX8",
+    "size": 24741822,
+    "sha256": "363c204f56ac8a08024a8b1dfe86126200a33a02b544c43192f8ee365f03aec1",
+    "extraction": ["zip", "inno-lzma1", "pe", "intel-hex"],
+    "url": "https://vortexseries.net/storage/support/software/01KS7GMMWGV5X40H14NXYAHKYN.zip"
+  },
+  {
+    "id": "1stplayer-mk8-windows-104",
+    "name": "1STPLAYER MK8",
+    "size": 21486758,
+    "sha256": "698fa1d2857fdc2af5c6ef53900f6ec471f8e1d6c19a190bf837eb4f97841fe1",
+    "extraction": ["inno-lzma1", "pe", "intel-hex"],
+    "url": "https://1stplayer.com/wp-content/uploads/2026/02/1STPLAYER-MK8-104.exe"
+  },
+  {
+    "id": "dns-ardor-blade-windows-1.06.10",
+    "name": "DNS / ARDOR GAMING Blade",
+    "size": 52647788,
+    "sha256": "f05bc579b4bfe5730b967f8131de643d349e97fc4eafbc4355e4d927379b7991",
+    "extraction": ["zip", "inno-lzma1", "pe", "intel-hex"],
+    "url": "https://drv.dns-shop.ru/drivers/oth/V/versia-10610_drajver_160435_20062025.zip"
+  },
+  {
+    "id": "dark-project-windows-1.04.17",
+    "name": "Dark Project Installer V1.04.17",
+    "size": 24554391,
+    "sha256": "63500ecef8e33d66196f9497a5099ca02a50d84f45047709a43643cdf6d5572c",
+    "extraction": ["zip", "inno-lzma1", "pe", "intel-hex"],
+    "url": "https://darkproject.ru/upload/iblock/924/yf7e7rjr5pnus9eaijoj14id1cahulxd/Dark%20Project_Installer_V1.04.17.zip"
+  }
+]

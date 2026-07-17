@@ -1,0 +1,16 @@
+# Release output (binaries, sources.json, and license files).
+/dist/
+
+# Local builds and test artifacts.
+/k223fetch
+/k223fetch.exe
+/*.test
+/coverage.out
+
+# Extracted firmware and optional vendored dependencies.
+/K223RGB_V10003.bin
+/vendor/
+
+# OS metadata.
+.DS_Store
+Thumbs.db
