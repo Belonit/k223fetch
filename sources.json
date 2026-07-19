@@ -36,14 +36,6 @@
     "url": "https://hator.gg/wp-content/uploads/driver/keyboards/HATOR_Skyfall_TKL_PRO_Software_Installer_V1.04.03.zip"
   },
   {
-    "id": "fl-esports-wayback-macos-1.06.02",
-    "name": "Internet Archive mirror",
-    "size": 44552730,
-    "sha256": "198588343896c24be75d743fb0e05fdd910f35a235e66c52f9452378a99686b8",
-    "extraction": ["zip", "dmg", "intel-hex"],
-    "url": "https://web.archive.org/web/20260716223524id_/https://flesports-1343263359.cos.ap-guangzhou.myqcloud.com/FL-Esports-V1.06.02.zip"
-  },
-  {
     "id": "fl-esports-vietnam-macos-1.06.02",
     "name": "FL Esports Vietnam V1.06.02",
     "size": 44552730,
