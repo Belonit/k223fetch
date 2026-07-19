@@ -134,6 +134,12 @@ func main() {
 		printSources(sources)
 		return
 	}
+	if ok, err := existingFirmwareValid(*out); err != nil {
+		fatal(err)
+	} else if ok {
+		fmt.Printf("%s already exists and is valid\n", absolutePath(*out))
+		return
+	}
 
 	list := append([]source(nil), sources...)
 	if *url != "" {
@@ -691,6 +697,35 @@ func valid(b []byte) bool {
 	return hex.EncodeToString(h[:]) == firmwareHash
 }
 
+func existingFirmwareValid(path string) (bool, error) {
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		return false, nil
+	}
+	if err != nil {
+		return false, err
+	}
+	p := newProgress("Verify existing firmware", 1)
+	if !info.Mode().IsRegular() || info.Size() != firmwareSize {
+		p.done(nil)
+		return false, nil
+	}
+	b, err := os.ReadFile(path)
+	p.done(err)
+	if err != nil {
+		return false, err
+	}
+	return valid(b), nil
+}
+
+func absolutePath(path string) string {
+	abs, err := filepath.Abs(path)
+	if err != nil {
+		return path
+	}
+	return abs
+}
+
 func writeFirmware(path string, fw []byte) error {
 	if !valid(fw) {
 		return errors.New("internal error: firmware hash mismatch")
@@ -700,7 +735,7 @@ func writeFirmware(path string, fw []byte) error {
 		isValid := valid(old)
 		if isValid {
 			p.done(nil)
-			fmt.Printf("%s already exists and is valid\n", path)
+			fmt.Printf("%s already exists and is valid\n", absolutePath(path))
 			return nil
 		}
 		err = fmt.Errorf("refusing to overwrite existing unrecognized file %s", path)

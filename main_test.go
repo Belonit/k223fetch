@@ -8,6 +8,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 	"time"
@@ -95,6 +96,28 @@ func TestVerifyDownload(t *testing.T) {
 	}
 	if err := verifyDownload(src, append(data, 0)); err == nil {
 		t.Fatal("size mismatch was accepted")
+	}
+}
+
+func TestExistingFirmwareValidMissingAndInvalid(t *testing.T) {
+	path := t.TempDir() + "/firmware.bin"
+	ok, err := existingFirmwareValid(path)
+	if err != nil || ok {
+		t.Fatalf("missing firmware: valid=%v, err=%v", ok, err)
+	}
+	if err := os.WriteFile(path, make([]byte, firmwareSize), 0o600); err != nil {
+		t.Fatal(err)
+	}
+	ok, err = existingFirmwareValid(path)
+	if err != nil || ok {
+		t.Fatalf("invalid firmware: valid=%v, err=%v", ok, err)
+	}
+}
+
+func TestAbsolutePath(t *testing.T) {
+	got := absolutePath("firmware.bin")
+	if !filepath.IsAbs(got) || filepath.Base(got) != "firmware.bin" {
+		t.Fatalf("unexpected absolute path: %q", got)
 	}
 }
 
