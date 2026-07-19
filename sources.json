@@ -60,6 +60,38 @@
     "url": "https://fl-esports.com/?wpdmdl=2504"
   },
   {
+    "id": "touslesdrivers-fl-esports-windows-1.06.24",
+    "name": "TousLesDrivers FL Esports V1.06.24 mirror",
+    "size": 57448884,
+    "sha256": "d3bb577feecff3f20fc142fe3e9348bfcccc579c6254581889672261e9420918",
+    "extraction": ["zip", "inno-lzma1", "pe", "intel-hex"],
+    "url": "https://fichiers.touslesdrivers.com/82275/FL-Esports-USB-Windows-V1.06.24.zip"
+  },
+  {
+    "id": "ruanjian60-fl-esports-windows-1.06.16",
+    "name": "Ruanjian60 FL Esports V1.06.16 mirror",
+    "size": 49135433,
+    "sha256": "a3d3209b5a572e000f04becd8e6816fd741bac492864387bf529cbe5299b6acd",
+    "extraction": ["zip", "inno-lzma1", "pe", "intel-hex"],
+    "url": "https://www.ruanjian60.com/downloads/eighth/FLEsportsYXDMRGBdriver.zip"
+  },
+  {
+    "id": "pulsar-fusion-windows-1.04.08",
+    "name": "Pulsar Fusion V1.04.08",
+    "size": 27209412,
+    "sha256": "de46b965e2aded98919f9ab6199c5aa36c66ab33a7012744ddb0e74efdba6e1e",
+    "extraction": ["inno-lzma1", "pe", "intel-hex"],
+    "url": "https://aplusxgg.github.io/download/PulsarFusion_Installer_V1.04.08.exe"
+  },
+  {
+    "id": "fantech-maxfit61-windows-1.3",
+    "name": "Fantech MAXFIT61 MK857 V1.3",
+    "size": 20339879,
+    "sha256": "462671e9c44dd008d64ec1b2193ff5dcce46818cab53dd82458cbd503f3fb38f",
+    "extraction": ["inno-lzma1", "pe", "intel-hex"],
+    "url": "https://cdn.shopify.com/s/files/1/0630/1689/4649/files/Maxfit61_MK857_Software_V1.3_23110600.exe?v=1699419692"
+  },
+  {
     "id": "vortexseries-vx8-windows",
     "name": "VortexSeries VX8",
     "size": 24741822,
